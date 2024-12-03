@@ -13,7 +13,7 @@ import java.util.Properties;
 @Service
 public class KafkaMessagePublisher2 {
 
-    Logger log = LoggerFactory.getLogger(KafkaMessagePublisher2.class);
+    private static final Logger log = LoggerFactory.getLogger(KafkaMessagePublisher2.class);
     @Autowired
     private NewTopic kafkaTopic;
 
