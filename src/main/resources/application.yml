@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+spring:
+  kafka:
+    producer:
+      bootstrap-servers:  localhost:9092
+
+kafka-topic:
+  name: sm-test-topic-3
+  partitions: 3
+  replication-factor: 1
