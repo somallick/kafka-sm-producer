@@ -1,12 +1,17 @@
 server:
   port: 8080
 
-spring:
-  kafka:
-    producer:
-      bootstrap-servers:  localhost:9092
+# Comment if the config java code level configuration is used for connecting to kafka
+# and serialise related configuration
+
+#spring:
+#  kafka:
+#    producer:
+#      bootstrap-servers:  localhost:9092
+##      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+##      value-serializer: org.apache.kafka.common.serialization.StringSerializer
 
 kafka-topic:
-  name: sm-test-topic-3
+  name: sm-test-topic-1
   partitions: 3
   replication-factor: 1

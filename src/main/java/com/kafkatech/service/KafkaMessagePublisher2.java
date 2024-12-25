@@ -10,10 +10,13 @@ import org.springframework.stereotype.Service;
 
 import java.util.Properties;
 
+/*
+* Another method of publish message to kafka by using java code level configuration of kafka
+*/
 @Service
 public class KafkaMessagePublisher2 {
 
-    Logger log = LoggerFactory.getLogger(KafkaMessagePublisher2.class);
+    private static final Logger log = LoggerFactory.getLogger(KafkaMessagePublisher2.class);
     @Autowired
     private NewTopic kafkaTopic;
 
