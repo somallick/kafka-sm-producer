@@ -10,6 +10,9 @@ import org.springframework.stereotype.Service;
 
 import java.util.Properties;
 
+/*
+* Another method of publish message to kafka by using java code level configuration of kafka
+*/
 @Service
 public class KafkaMessagePublisher2 {
 
