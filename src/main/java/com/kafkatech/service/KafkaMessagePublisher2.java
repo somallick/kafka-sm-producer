@@ -38,7 +38,7 @@ public class KafkaMessagePublisher2 {
 
         ProducerRecord<String, String> producerRecord = new ProducerRecord<>(kafkaTopic.name(), message);
 
-        // send data - asynchronous
+        // send data - this function send in asynchronous manner
         kafkaProducer.send(producerRecord);
 
         //tell the producer to send all data and block until done - synchronous
@@ -64,7 +64,7 @@ public class KafkaMessagePublisher2 {
         ProducerRecord<String, String> producerRecord = new ProducerRecord<>(kafkaTopic.name(), message);
 
         //Record to be sent to kafka topic with key - Please check ProducerRecord class
-        //ProducerRecord<String, String> producerRecord2 = new ProducerRecord<>(kafkaTopic.name(), "key", message);
+        //ProducerRecord<String, String> producerRecord2 = new ProducerRecord<>(kafkaTopic.name(), "<key>", message);
 
         // send data - asynchronous
         kafkaProducer.send(producerRecord, new Callback() {
